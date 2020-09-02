@@ -31,7 +31,7 @@ function promptUser() {
             type: "list",
             name: "license",
             message: "Select a license.",
-            choices: ["MIT", "GNU", "Apache", "none"]
+            choices: ["MIT", "GNU", "Apache"]
         },
         {
             type: "input",
@@ -108,7 +108,7 @@ promptUser()
         return writeFileAsync("README.md", md);
     })
     .then(function () {
-        console.log("Successfully wrote to readme.md");
+        console.log("Successfully wrote to README.md");
     })
     .catch(function (err) {
         console.log(err);
